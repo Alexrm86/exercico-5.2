@@ -62,23 +62,33 @@
     <script>
         let H1 = document.createElement('h1');
         H1.innerText = 'Exercício 5.2 - JavaScript DOM';
-        document.body.appendChild(elementH1);
+        document.body.appendChild(H1);
 
-        let criar_Main_Add_Class = document.createElement('main');
-        criar_main_add_class.className = 'main-content';
-        document.body.appendChild(elementMain);
+        let mainAddClass = document.createElement('main');
+        mainAddClass.className = 'main-content';
+        document.body.appendChild(mainAddClass);
 
 
-        let criando_Section_InserindoClass = document.createElement('section');
-        let InserindoClassclassName = 'center-content';
-        elementMain.appendChild(InserindoClass.className);
-        let criadoTagP = document.createElement('p');
-        document.section.appendChild(elementP);
+        let createSection = document.createElement('section');
+        createSection.className = 'center-content';
+        mainAddClass.appendChild(createSection);
 
-        let criarClass = " left-content ";
-        elementMain.appendChild(criarClass.className);
-        let criarClass2 = " left-content ";
-        elementMain.appendChild(criarClass2.className);
+        let criandoTagP = document.createElement('p');
+        criandoTagP.innerHTML = "OLá";
+        createSection.appendChild(criandoTagP);
+
+        let classLeft = document.createElement('section');
+        classLeft.className = " left-content ";
+        mainAddClass.appendChild(classLeft);
+
+        let classRight = document.createElement('section');
+        classRight.className = 'right-content'
+        mainAddClass.appendChild(classRight);
+
+        let Img = document.createElement('img');
+        Img.className = 'small-image';
+        Img.src = 'https://picsum.photos/200';
+        classRight.appendChild(Img);
     </script>
 </body>
 
