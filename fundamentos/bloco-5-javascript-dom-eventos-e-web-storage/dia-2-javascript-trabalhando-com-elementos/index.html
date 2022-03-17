@@ -108,11 +108,15 @@
             H3.className = 'description ';
             mainAddClass.appendChild(H3);
         }
-        classLeft.className = " left-content ";
-        mainAddClass.removeChild(classLeft);
 
         let estilo = document.getElementsByClassName('right-content')[0];
         estilo.style.marginRight = 'auto';
+
+        let sectionCenterContent = document.getElementsByClassName('center-content')[0];
+        sectionCenterContent.parentNode.style.backgroundColor = 'green';
+
+        classLeft.className = (" left-content ")[0];
+        mainAddClass.removeChild(classLeft);
     </script>
 </body>
 
