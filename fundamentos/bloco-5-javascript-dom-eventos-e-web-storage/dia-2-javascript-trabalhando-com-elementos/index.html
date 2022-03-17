@@ -83,7 +83,8 @@
 
         let classRight = document.createElement('section');
         classRight.className = 'right-content'
-        mainAddClass.appendChild(classRight);
+        mainAddClass.appendChild(classRight)
+
 
         let Img = document.createElement('img');
         Img.className = 'small-image';
@@ -107,8 +108,11 @@
             H3.className = 'description ';
             mainAddClass.appendChild(H3);
         }
-        let remove = classLeft.className = " left-content ";
-        mainAddClass.removeChild(remove);
+        classLeft.className = " left-content ";
+        mainAddClass.removeChild(classLeft);
+
+        let estilo = document.getElementsByClassName('right-content')[0];
+        estilo.style.marginRight = 'auto';
     </script>
 </body>
 
