@@ -62,6 +62,7 @@
     <script>
         let H1 = document.createElement('h1');
         H1.innerText = 'Exercício 5.2 - JavaScript DOM';
+        H1.className = 'title';
         document.body.appendChild(H1);
 
         let mainAddClass = document.createElement('main');
@@ -89,6 +90,23 @@
         Img.className = 'small-image';
         Img.src = 'https://picsum.photos/200';
         classRight.appendChild(Img);
+
+        let Ul = document.createElement('ul');
+        classRight.appendChild(Ul);
+        let numbersCurrents = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+            'Sete', 'Oito', 'Nove', 'Dez'
+        ];
+        for (let index = 0; index < numbersCurrents.length; index += 1) {
+            let Li = document.createElement('li');
+            Li.innerHTML = numbersCurrents[index];
+            Ul.appendChild(Li);
+        }
+
+        for (let index = 1; index <= 3; index += 1) {
+            let H3 = document.createElement('h3');
+            H3.innerHTML = index;
+            mainAddClass.appendChild(H3);
+        }
     </script>
 </body>
 
