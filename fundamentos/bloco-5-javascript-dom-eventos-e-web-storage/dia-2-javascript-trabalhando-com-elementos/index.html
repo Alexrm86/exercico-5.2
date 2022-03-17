@@ -79,8 +79,7 @@
         createSection.appendChild(criandoTagP);
 
         let classLeft = document.createElement('section');
-        classLeft.className = " left-content ";
-        mainAddClass.appendChild(classLeft);
+
 
         let classRight = document.createElement('section');
         classRight.className = 'right-content'
@@ -108,6 +107,8 @@
             H3.className = 'description ';
             mainAddClass.appendChild(H3);
         }
+        let remove = classLeft.className = " left-content ";
+        mainAddClass.removeChild(remove);
     </script>
 </body>
 
